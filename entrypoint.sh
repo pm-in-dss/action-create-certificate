@@ -32,5 +32,6 @@ mv ${ACC_HOME}/out/host-key.pem ${ACC_HOME}/out/${KEY_FILE}
 
 if [ ! -z $GITHUB_WORKSPACE ]
 then
-  cp -p ${ACC_HOME}/out/${CERT_FILE} ${ACC_HOME}/out/${KEY_FILE} ${ACC_HOME}/out/${CHAIN_FILE} $GITHUB_WORKSPACE
+  cp ${ACC_HOME}/out/${CERT_FILE} ${ACC_HOME}/out/${KEY_FILE} ${ACC_HOME}/out/${CHAIN_FILE} $GITHUB_WORKSPACE
+  ls -al
 fi
